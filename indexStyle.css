@@ -1,0 +1,37 @@
+body {
+    padding-left: 2%;
+}
+
+label {
+    font-size: 20px;
+    /* padding-bottom: 0%; */
+}
+
+h1 {
+    margin-bottom: auto;
+}
+
+p {
+    /* */
+    margin-top: auto;
+}
+
+button {
+    background-color: blanchedalmond;
+    padding: 5px;
+    margin-top: auto;
+    box-shadow: 2px 2px;
+    /* margin-bottom: 5px; */
+}
+
+button:hover {
+    background-color:bisque;
+}
+
+#projSection {
+    margin-top: 5%;
+}
+
+#projDescription {
+    margin-bottom: 1.5%;
+}
