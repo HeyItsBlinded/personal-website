@@ -24,18 +24,20 @@
             for added features.
         </p>
 
-        <div id="canvasContainer">
-            <button type="button" id="clear">CLEAR CANVAS</button>
-            <br> 
+        <div class="container">
+        <!----- CANVAS ----->
+        <div class="flex" id="canvasContainer">
             <canvas id="webgl" width="400" height="400">
                 Please use browser supporting "canvas"
             </canvas>
             <p id="numdot">[DISPLAY]</p>
         </div>
-        <!-- -- -- -- -- -- -->
-        <div id="interface">
 
+        <!----- INTERFACE ----->
+        <div class="flex">
             <div id="colorSelect">
+                <button type="button" id="clear">CLEAR CANVAS</button>
+                <br>
                 <label>color select</label>
                 <br>
                 <button type="button" id="erase">eraser</button>
@@ -45,12 +47,15 @@
                 <button type="button" id="blue">blue</button>
                 <button type="button" id="yellow">yellow</button>
                 <br>
-                <label id="colorLabel">R</label><input type="range" min="0" max="100" value="255" class="slider" id="redSlide">
-                <label id="colorLabel">G</label><input type="range" min="0" max="100" value="255" class="slider" id="greenSlide">
-                <label id="colorLabel">B</label><input type="range" min="0" max="100" value="255" class="slider" id="blueSlide">
+                <label id="colorLabel">R</label>
+                <input type="range" min="0" max="100" value="255" class="slider" id="redSlide">
+                <label id="colorLabel">G</label>
+                <input type="range" min="0" max="100" value="255" class="slider" id="greenSlide">
+                <label id="colorLabel">B</label>
+                <input type="range" min="0" max="100" value="255" class="slider" id="blueSlide">
             </div>
 
-            <br><br>
+            <br>
 
             <div id="shapeSelect">
                 <label>shape select</label>
@@ -58,8 +63,7 @@
                 <button type="button" id="pointButton">point</button>
                 <button type="button" id="triangleButton">triangle</button>
                 <button type="button" id="circleButton">circle</button>
-                <br><br>
-                <br><br>
+                <br>
                 <label id="shapeselectLabel">size</label>
                 <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlide">
                 <!---->
@@ -83,12 +87,15 @@
 
             <br>
 
-            <div id="drafting">
-                <label>template mockups:</label>
-                <br>
-                <img src="custom.jpeg" alt="my sketch of butterfly">
-                <img src="custom2.jpg" alt="my sketch of a cool dude">
-            </div>
         </div>
+        </div>
+        <!--
+        <div id="drafting">
+            <label>template mockups:</label>
+            <br>
+            <img src="custom.jpeg" alt="my sketch of butterfly">
+            <img src="custom2.jpg" alt="my sketch of a cool dude">
+        </div>
+        -->
     </body>
 </html>
